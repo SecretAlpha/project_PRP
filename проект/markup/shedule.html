@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Shedule</title>
+  <link rel="stylesheet" type="text/css" href="../css/shedule.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<header class="header col-md-8 col-sm-11 col-11 mr-auto ml-auto">
+    <div class="header-title row">
+      <nav class="navbar navbar-expand-md navbar-light bg-wight col-12 mr-auto ml-auto">
+        <a class="navbar-brand font-weight-bold col-1 pl-0" href="https://nure.ua/">NURE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav align-items-center">
+            <a class="nav-item nav-link" href="../markup/shedule.html">Shedule <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="../markup/coursesInformation.html">Information about lessons</a>
+            <a class="nav-item nav-link" href="#">Information about teachers</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="header-info row pt-3">
+    	<div class="name-group col-12 col-md-4 col-sm-12">
+    		<h6>Name of group</h6>
+    		<p id='input_grouppa'>PE-18-3</p>
+    	</div>
+    	<div class="choose-date col-12 col-md-4 col-sm-12">
+    		<label for='date_chooser'>Choose date:</label><br/>
+    		<input type="date" name="choosedate" id='data_chooser'>
+    	</div>
+    	<div class="user-icon row d-none d-md-block col-md-4">
+    		<p id="user__name">Andrii Kovalenko</p>
+    	</div>
+    </section>
+  </header>
+  <main>
+  	<table class="table">
+  		<thead>
+  			<tr>
+  				<th scope='col' class="table__header">Time</th>
+  				<th scope='col' class="table__header">Monday</th>
+  				<th scope='col' class="table__header">Tuesday</th>
+  				<th scope='col' class="table__header">Wednesday</th>
+  				<th scope='col' class="table__header">Thursday</th>
+  				<th scope='col' class="table__header">Friday</th>
+  				<th scope='col' class="table__header">Saturday</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr>
+  				<th scope="row" class="table__time">7.45-9.20</th>
+  				<td id="cell_0_0" class="table__cell">
+  					<div class="cell__block">
+  						<div class="row navbar">
+  							<p class="name_course">PRP</p>
+  							<p class="type_lesson">LB</p>
+  						</div>
+  						<div class="row navbar">
+  							<p class="cabinet">456</p>
+  							<p class="name_info-teacher">Iryna Afanasieva</p>
+  						</div>
+  					</div>
+  				</td>
+  				<td id="cell_0_1" class="table__cell">second</td>
+  				<td id="cell_0_2" class="table__cell">thie</td>
+  				<td id="cell_0_3" class="table__cell">fdkjsfkds</td>
+  				<td id="cell_0_4" class="table__cell">fift</td>
+  				<td id="cell_0_5" class="table__cell">six</td>
+  			</tr>
+  			<tr>
+  				<th scope="row">9.30-11.05</th>
+  				<td id="cell_1_0" class="table__cell">firsr</td>
+  				<td id="cell_1_1" class="table__cell">second</td>
+  				<td id="cell_1_2" class="table__cell">thie</td>
+  				<td id="cell_1_3" class="table__cell">foyre</td>
+  				<td id="cell_1_4" class="table__cell">fift</td>
+  				<td id="cell_1_5" class="table__cell">six</td>
+  			</tr>
+  			<tr>
+  				<th scope="row">11.15-12.50</th>
+  				<td id="cell_2_0" class="table__cell">firsr</td>
+  				<td id="cell_2_1" class="table__cell">second</td>
+  				<td id="cell_2_2" class="table__cell">thie</td>
+  				<td id="cell_2_3" class="table__cell">foyre</td>
+  				<td id="cell_2_4" class="table__cell">fift</td>
+  				<td id="cell_2_5" class="table__cell">six</td>
+  			</tr>
+  			<tr>
+  				<th scope="row">13.10-14.45</th>
+  				<td id="cell_3_0" class="table__cell">firsr</td>
+  				<td id="cell_3_1" class="table__cell">second</td>
+  				<td id="cell_3_2" class="table__cell">thie</td>
+  				<td id="cell_3_3" class="table__cell">foyre</td>
+  				<td id="cell_3_4" class="table__cell">fift</td>
+  				<td id="cell_3_5" class="table__cell">six</td>
+  			</tr>
+  			<tr>
+  				<th scope="row">14.55-16.30</th>
+  				<td id="cell_4_0" class="table__cell">firsr</td>
+  				<td id="cell_4_1" class="table__cell">second</td>
+  				<td id="cell_4_2" class="table__cell">thie</td>
+  				<td id="cell_4_3" class="table__cell">foyre</td>
+  				<td id="cell_4_4" class="table__cell">fift</td>
+  				<td id="cell_4_5" class="table__cell">six</td>
+  			</tr>
+  			<tr>
+  				<th scope="row">16.40-18.15</th>
+  				<td id="cell_5_0" class="table__cell">firsr</td>
+  				<td id="cell_5_1" class="table__cell">second</td>
+  				<td id="cell_5_2" class="table__cell">thie</td>
+  				<td id="cell_5_3" class="table__cell">foyre</td>
+  				<td id="cell_5_4" class="table__cell">fift</td>
+  				<td id="cell_5_5" class="table__cell">six</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </main>
+
+  <footer class="navbar col-md-8 col-sm-11 col-11 mr-auto ml-auto">
+  	<button type='button' id="back_button" class="btn btn-secondary">&larr; Previous</button>
+  	<button type='button' id="current_button" class="btn btn-primary">Back to current page</button>
+  	<button type='button' id="next_button" class="btn btn-secondary">Next &rarr;</button>
+  </footer>
+
+<script type="text/javascript">
+	window.onload = function () {
+		document.getElementById("data_chooser").valueAsDate = new Date();
+	}
+</script>
+<script type="text/javascript" src="../js/shedule.js"></script>
+</body>
+</html>
